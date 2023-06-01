@@ -2,7 +2,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   // background-position: top center;
-  background-blend-mode: overlay;
+  //background-blend-mode: overlay;
   background-color: $primary;
   height: 400px;
   position: relative;
@@ -18,19 +18,22 @@
   }
   .hero-text {
     flex: 0;
-    color: #ffffff;
+    color: $white;
     margin: auto 0;
+    background: rgba($primary, .7); border-radius: 5px; box-shadow: 0 0 5px 5px rgba($primary, .7);
     h1 {
       font-family: $font-family-heading;
       font-size: 3rem;
+      color: $white;
       @include media-breakpoint-up(md) {
         font-size: 4rem;
         width: 80%;
       }
-    }
+     }
     h2 {
       font-family: $font-family-heading;
       font-size: 2.2rem;
+      color: $white;
       @include media-breakpoint-up(md) {
         font-size: 2.4rem;
       }
@@ -38,6 +41,7 @@
     p {
       font-size: 1.6rem;
       line-height: 1.3;
+      color: $white;
       @include media-breakpoint-up(md) {
         font-size: 1.6rem;
         width: 60%;
@@ -64,7 +68,7 @@
   height: 460px;
 }
 .hero-image-blend-overlay {
-  background-blend-mode: overlay;
+  //background-blend-mode: overlay;
 }
 
 // Enable smooth scrolling (on hero-down click)
